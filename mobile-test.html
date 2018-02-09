@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+body{background-color:#000000}
+iframe{margin:4px; display:none}
+</style>
+<script src="js/jquery.js"></script>
+<script>
+	function loadMe(id){
+		$("iframe").hide();
+		$("#"+id).show();
+	}
+</script>
+</head>
+
+<body>
+
+<a href="javascript:loadMe('phone')">Phone</a>
+<a href="javascript:loadMe('portrait')">Portrait</a>
+<a href="javascript:loadMe('landscape')">Landscape</a>
+<br/>
+
+<iframe src="http://offmarketuk.com" frameborder="0" hspace="0" scrolling="auto" style="width:320px; height:657px" id="phone" style="display:block"></iframe>
+
+<iframe src="http://offmarketuk.com" frameborder="0" hspace="0" scrolling="auto" style="width:768px; height:1512px" id="portrait"></iframe>
+
+<iframe src="http://offmarketuk.com" frameborder="0" hspace="0" scrolling="auto" style="width:1024px; height:1012px" id="landscape"></iframe>
+
+</body>
+</html>
