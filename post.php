@@ -11,5 +11,6 @@ $fields = array(
 $url = 'http://www.mdmdata.co.uk/test.php';
 
 echo postData($fields, $url);
+echo ""
 
 ?>
